@@ -1,0 +1,51 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  .container {
+    display: flex;
+  }
+
+ 
+
+  @media screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+
+    body {
+        padding: 2% 5%;
+    }
+    header p {
+        font-size: 2.5rem;
+        text-align: center;
+      }
+    
+    header nav ul li {
+        display: none;
+    }
+    
+    .main-content h1 {
+        text-align: center;
+    }
+    .main-content p {
+        text-align: justify;
+        font-size: 1.2rem;
+    }    
+  }
+
+  @media screen and (min-width: 600px) {
+    .container {
+        flex-wrap: wrap;
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    .container {
+        flex-wrap: nowrap;
+    }
+  }
